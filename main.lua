@@ -13,7 +13,7 @@
 
 
 local ROWS = 20
-local COLS = 40
+local COLS = 20 --40
 local STEPS = 100
 local DELAY = 0.2
 
@@ -123,6 +123,23 @@ local startCells = {
     {4, 3},
     {4, 4}
 }
+
+
+-- Начальная фигугра: "Блок"
+-- local startCells = {
+--     {5, 5},
+--     {5, 6},
+--     {6, 5},
+--     {6, 6}
+-- }
+
+--Начальная фигура: "Мигалка"
+-- local startCells = {
+-- {5, 5},
+-- {5, 6},
+-- {5, 7}
+-- }
+
 
 setAlive(current, startCells)
 
