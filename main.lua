@@ -30,15 +30,15 @@ local function createField(rows, cols)
 end
 
 -- Копирование начального состояния в поле
--- local function setAlive(field, cells)
---     for _, cell in ipairs(cells) do
---         local r = cell[1]
---         local c = cell[2]
---         if field[r] and field[r][c] then
---             field[r][c] = 1
---         end
---     end
--- end
+local function setAlive(field, cells)
+    for _, cell in ipairs(cells) do
+        local r = cell[1]
+        local c = cell[2]
+        if field[r] and field[r][c] then
+            field[r][c] = 1
+        end
+    end
+end
 
 -- Подсчет живых соседей
 local function countNeighbors(field, row, col, rows, cols)
